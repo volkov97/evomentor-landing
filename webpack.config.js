@@ -2,21 +2,18 @@ const path = require('path');
 
 const webpack = require('webpack');
 const merge = require('webpack-merge');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // Modules
 const devServer = require('./webpack/dev-server');
-const pug = require('./webpack/pug');
-const sass = require('./webpack/sass');
-const css = require('./webpack/css');
-const extractCSS = require('./webpack/css.extract');
 const uglifyJS = require('./webpack/js.uglify');
 const images = require('./webpack/images');
+const babel = require('./webpack/babel');
+const define = require('./webpack/define');
 
 const PATHS = {
     source: {
-        home: path.join(__dirname, 'source', 'home'),
-        dashboard: path.join(__dirname, 'source', 'dashboard'),
+        visitor: path.join(__dirname, 'client', 'visitor'),
+        admin: path.join(__dirname, 'client', 'admin'),
     },
     build: path.join(__dirname, 'build')
 };
@@ -30,43 +27,32 @@ let options = {
 options.common = merge([
     {
         entry: {
-            home: path.resolve(`${PATHS.source.home}/home.js`),
-            dashboard: path.resolve(`${PATHS.source.dashboard}/dashboard.js`)
+            visitor: path.resolve(`${PATHS.source.visitor}/visitor.jsx`),
+            admin: path.resolve(`${PATHS.source.admin}/admin.jsx`)
         },
         output: {
             path: PATHS.build,
             filename: './js/[name].js'
         },
+        resolve: {
+            extensions: ['.js', '.jsx']
+        },
         plugins: [
-            // Home HTML
-            new HtmlWebpackPlugin({
-                chunks: ['home', 'common'],
-                template: path.resolve(`${PATHS.source.home}/home.pug`),
-                filename: 'home.html'
-            }),
-            // Dashboard HTML
-            new HtmlWebpackPlugin({
-                chunks: ['dashboard', 'common'],
-                template: path.resolve(`${PATHS.source.dashboard}/dashboard.pug`),
-                filename: 'dashboard.html'
-            }),
             new webpack.optimize.CommonsChunkPlugin({
                 name: 'common'
             })
         ]
     },
-    pug(),
-    images()
+    images(),
+    babel()
 ]);
 
 options.development = merge([
-    devServer(),
-    sass(),
-    css()
+    devServer()
 ]);
 
 options.production = merge([
-    extractCSS(),
+    define(),
     uglifyJS()
 ]);
 
