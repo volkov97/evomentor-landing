@@ -1,16 +1,20 @@
 import React from 'react';
 
+import {
+    RootWrapper
+} from './Styles';
+
 import Menu from './Menu/Menu';
 
 export default class Root extends React.Component {
     render() {
         return (
-            <div className="root">
+            <RootWrapper>
                 <Menu />
-                <div className="root__content">
+                <div>
                     {this.props.children}
                 </div>
-            </div>
+            </RootWrapper>
         )
     }
 }   

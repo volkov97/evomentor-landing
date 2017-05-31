@@ -6,6 +6,7 @@ import { renderToString } from 'react-dom/server';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
+import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
 
 export default ({
     routes, location, reducer
@@ -32,18 +33,29 @@ export default ({
                 applyMiddleware(thunk)
             );
 
+            // Styles
+            const sheet = new ServerStyleSheet();
+
             fetchData({ store, location, params, history })
                 .then(() => {
+                    // Markup
                     const markup = renderToString(
-                        <Provider store={store}>
-                            <RouterContext {...renderProps} />
-                        </Provider>
+                        <StyleSheetManager sheet={sheet.instance}>
+                            <Provider store={store}>
+                                <RouterContext {...renderProps} />
+                            </Provider>
+                        </StyleSheetManager>
                     );
 
                     // Grab the initial state from our Redux store
                     const finalState = store.getState();
 
-                    resolve({ markup, state: finalState });
+                    // Final Styles
+                    const finalCss = sheet.getStyleTags();
+
+                    console.log(finalCss);
+
+                    resolve({ markup, state: finalState, css: finalCss });
                 })
                 .catch((err) => reject(err));
         });
