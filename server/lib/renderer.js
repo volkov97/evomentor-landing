@@ -39,21 +39,17 @@ export default ({
             fetchData({ store, location, params, history })
                 .then(() => {
                     // Markup
-                    const markup = renderToString(
-                        <StyleSheetManager sheet={sheet.instance}>
+                    const markup = renderToString(sheet.collectStyles(
                             <Provider store={store}>
                                 <RouterContext {...renderProps} />
                             </Provider>
-                        </StyleSheetManager>
-                    );
+                    ));
 
                     // Grab the initial state from our Redux store
                     const finalState = store.getState();
 
                     // Final Styles
                     const finalCss = sheet.getStyleTags();
-
-                    console.log(finalCss);
 
                     resolve({ markup, state: finalState, css: finalCss });
                 })
