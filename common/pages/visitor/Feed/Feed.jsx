@@ -1,5 +1,7 @@
 import React from 'react';
 
+import LinkedInIcon from './linkedin.svg';
+
 export default class Feed extends React.Component {
 
     componentDidMount() {
@@ -18,6 +20,7 @@ export default class Feed extends React.Component {
                         </div>
                     )}
                 </div>
+                <LinkedInIcon />
             </div>
         );
     }
