@@ -8,6 +8,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import thunk from 'redux-thunk';
+import createDictionary  from '../../common/lib/dictionary'
 
 import reducer from '../../common/reducers/visitor';
 import routes from '../../common/routes/visitor';
@@ -20,6 +21,8 @@ const store = createStore(
 );
 
 const history = syncHistoryWithStore(browserHistory, store);
+
+createDictionary(store);
 
 ReactDOM.render(
     <Provider store={store}>

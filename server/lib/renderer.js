@@ -7,6 +7,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
+import createDictionary from '../../common/lib/dictionary'
 
 export default ({
     routes, location, reducer
@@ -32,6 +33,8 @@ export default ({
                 initialState,
                 applyMiddleware(thunk)
             );
+
+            createDictionary(store);
 
             // Styles
             const sheet = new ServerStyleSheet();
