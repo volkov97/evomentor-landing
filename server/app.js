@@ -21,6 +21,7 @@ if (process.env.NODE_ENV.indexOf('development') != -1) {
     const compiler = webpack(require('../webpack.config')('development'));
 
     app.use(webpackDevMiddleware(compiler, { noInfo: true }));
+    app.use(require("webpack-hot-middleware")(compiler, { log: console.log }));
 }
 
 // static routes

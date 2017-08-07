@@ -5,7 +5,7 @@ import { Menu } from './Styles';
 
 const menu = [
     { name: 'Feed', link: '/' },
-    { name: 'Contacts', link: '/contacts' }
+    { name: 'Contacts', link: '/condtacts' }
 ];
 
 export default (props) =>

@@ -10,7 +10,7 @@ export default (
     <div>
         <Route path='/' component={Root} >
             <IndexRoute component={FeedContainer}/>
-            <Route path="contacts" component={Contacts} />
+            <Route path="condtacts" component={Contacts} />
             <Route path="*" component={NotFound} />
         </Route>
     </div>
