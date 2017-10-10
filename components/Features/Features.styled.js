@@ -23,7 +23,6 @@ export const FeaturesHeader = styled.h2`
   margin-bottom: 20px;
 
   font-size: 1.8em;
-  font-weight: lighter;
   line-height: 1.4;
   color: #e35d5b;
 
