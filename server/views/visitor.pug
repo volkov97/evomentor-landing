@@ -1,0 +1,20 @@
+doctype html
+html(class="no-js" lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+
+        meta(name="description" content="Homepage of volkov97.com web-site. Nice to meet you!")
+
+        .
+            !{css}
+        
+        title v97 - Home
+    body
+        #root !{markup}
+
+        script.
+            window.__PRELOADED_STATE__ = !{JSON.stringify(state).replace(/</g, '\\x3c')}
+        script(src="js/common.js")
+        script(src="js/visitor.js")
