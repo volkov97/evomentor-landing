@@ -12,17 +12,17 @@ export const Poster = styled.section`
 
 export const PosterBackground = styled.div`
   min-height: 250px;
-  background: #fff url('/static/images/poster_mobile.jpg') 50% 100% no-repeat;
+  background: #fff url('/images/poster_mobile.jpg') 50% 100% no-repeat;
   background-size: cover;
 
   ${media.tablet`
     min-height: 450px;
-    background-image: url('/static/images/poster_tablet.jpg');
+    background-image: url('/images/poster_tablet.jpg');
   `}
 
   ${media.desktop`
     min-height: 750px;
-    background-image: url('/static/images/poster_desktop.jpg');
+    background-image: url('/images/poster_desktop.jpg');
   `}
 `
 

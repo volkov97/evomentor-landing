@@ -14,8 +14,7 @@ const define = require('./webpack/define');
 
 const PATHS = {
     source: {
-        visitor: path.join(__dirname, 'client', 'visitor'), 
-        admin: path.join(__dirname, 'client', 'admin'),
+        visitor: path.join(__dirname, 'client', 'visitor'),
     },
     build: path.join(__dirname, 'build')
 };
@@ -52,7 +51,6 @@ options.development = merge([
     {
         entry: {
             visitor: [path.resolve(`${PATHS.source.visitor}/visitor.jsx`), hotMiddlewareScript],
-            admin: [path.resolve(`${PATHS.source.admin}/admin.jsx`), hotMiddlewareScript]
         }
     }
 ]);
@@ -63,13 +61,12 @@ options.production = merge([
     {
         entry: {
             visitor: path.resolve(`${PATHS.source.visitor}/visitor.jsx`),
-            admin: path.resolve(`${PATHS.source.admin}/admin.jsx`)
         }
     }
 ]);
 
 module.exports = function(env) {
-    return env === 'production' 
+    return env === 'production'
         ? merge([ options.common, options.production ])
         : merge([ options.common, options.development ]);
 };

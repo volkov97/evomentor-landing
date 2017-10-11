@@ -1,7 +1,7 @@
 {
-  "name": "volkov97",
+  "name": "evomentor",
   "version": "1.0.0",
-  "description": "volkov97.com web-site",
+  "description": "evomentor.com web-site",
   "main": "index.js",
   "dependencies": {
     "babel-core": "^6.24.1",
@@ -53,10 +53,6 @@
     "build-clear": "rm -rf build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VolkovGerman/volkov97.git"
-  },
   "keywords": [
     "blog",
     "personal"
@@ -64,7 +60,7 @@
   "author": "Volkov German <Volkov.german.1997@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VolkovGerman/volkov97/issues"
+    "url": "https://github.com/Evomentor/evomentor-landing/issues"
   },
-  "homepage": "https://github.com/VolkovGerman/volkov97#readme"
+  "homepage": "https://github.com/VolkovGerman/evomentor#readme"
 }

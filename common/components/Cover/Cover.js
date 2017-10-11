@@ -13,8 +13,8 @@ import {
 export default (props) =>
   <Wrap>
     <Header>
-        <Emblem src="/static/images/emblem.png" />
-        <Logo src="/static/images/logo.png" />
+        <Emblem src="/images/emblem.png" />
+        <Logo src="/images/logo.png" />
     </Header>
     <ArrowDown><Icon type="arrow-down" /></ArrowDown>
   </Wrap>

@@ -2,17 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e97104-5cf5-4703-adcd-63b83372c7bd" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/cover_desktop.jpg" afterPath="$PROJECT_DIR$/static/images/cover_desktop.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/cover_mobile.jpg" afterPath="$PROJECT_DIR$/static/images/cover_mobile.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/cover_tablet.jpg" afterPath="$PROJECT_DIR$/static/images/cover_tablet.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/emblem.png" afterPath="$PROJECT_DIR$/static/images/emblem.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/logo.png" afterPath="$PROJECT_DIR$/static/images/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/Cover/Cover.js" afterPath="$PROJECT_DIR$/components/Cover/Cover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/Icon/Icon.js" afterPath="$PROJECT_DIR$/components/Icon/Icon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/Icon/_svg/arrow-down.svg" afterPath="$PROJECT_DIR$/components/Icon/_svg/arrow-down.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index.js" afterPath="$PROJECT_DIR$/pages/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/routes/index.jsx" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/admin/admin.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pages/admin/Dashboard/Dashboard.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pages/admin/NotFound/NotFound.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pages/visitor/Contacts/Contacts.dictionary.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pages/visitor/Contacts/Contacts.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pages/visitor/Feed/Feed.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pages/visitor/Feed/FeedContainer.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pages/visitor/Feed/linkedin.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pages/visitor/NotFound/NotFound.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pages/visitor/Root/Menu/Menu.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pages/visitor/Root/Menu/Styles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pages/visitor/Root/Root.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pages/visitor/Root/Styles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/reducers/admin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/routes/admin.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/routes/visitor.jsx" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/reducers/entities/projects.js" afterPath="$PROJECT_DIR$/common/reducers/projects.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/common/reducers/visitor.js" afterPath="$PROJECT_DIR$/common/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/visitor/visitor.jsx" afterPath="$PROJECT_DIR$/client/visitor/visitor.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/visitor.jsx" afterPath="$PROJECT_DIR$/server/controllers/visitor.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +37,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/routes/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/common/routes/visitor.jsx" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
@@ -35,9 +68,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -81,11 +111,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evomentor-landing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evomentor-landing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reducers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evomentor-landing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evomentor-landing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evomentor-landing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evomentor-landing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -106,6 +186,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common/reducers" />
       <recent name="$PROJECT_DIR$/static/images" />
     </key>
   </component>
@@ -193,12 +274,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507660385027</updated>
-      <workItem from="1507660386834" duration="69000" />
+      <workItem from="1507660386834" duration="510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69000" />
+    <option name="totallyTimeSpent" value="510000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -231,5 +312,15 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/common/routes/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

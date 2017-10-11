@@ -7,7 +7,7 @@ export const Wrap = styled.div`
     min-height: 90vh;
 
     background-color: #ffffff;
-    background-image: url('../../static/images/cover_mobile.jpg');
+    background-image: url('../../images/cover_mobile.jpg');
 
     background-size: cover;
     background-position: 50% 100%;
@@ -15,7 +15,7 @@ export const Wrap = styled.div`
     ${media.tablet`
         padding-top: 35px;
 
-        background-image: url('../../static/images/cover_tablet.jpg');
+        background-image: url('../../images/cover_tablet.jpg');
     `}
 
     ${media.desktop`
@@ -23,7 +23,7 @@ export const Wrap = styled.div`
 
         min-height: 100vh;
 
-        background-image: url('../../static/images/cover_desktop.jpg');
+        background-image: url('../../images/cover_desktop.jpg');
     `}
 `;
 

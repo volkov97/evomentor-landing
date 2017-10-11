@@ -10,8 +10,8 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import thunk from 'redux-thunk';
 import createDictionary  from '../../common/lib/dictionary'
 
-import reducer from '../../common/reducers/visitor';
-import routes from '../../common/routes/visitor';
+import reducer from '../../common/reducers/index';
+import routes from '../../common/routes/index';
 
 const preloadedState = window.__PRELOADED_STATE__;
 const store = createStore(

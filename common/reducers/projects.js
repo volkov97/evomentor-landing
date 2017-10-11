@@ -1,4 +1,4 @@
-import * as actionTypes from '../../actions-types/projects';
+import * as actionTypes from '../actions-types/projects';
 
 const initialState = {
     data: [],

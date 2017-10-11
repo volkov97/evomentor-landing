@@ -1,10 +1,7 @@
 import { i18nActions, Loc } from 'redux-react-i18n'
 
-import contacts from '../../common/pages/visitor/Contacts/Contacts.dictionary'
-
 const dictionaries = Object.assign(
     {},
-    contacts
 )
 
 const languages = [

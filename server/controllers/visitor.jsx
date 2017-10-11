@@ -1,7 +1,7 @@
 import renderer from '../lib/renderer';
 
-import visitorReducer from '../../common/reducers/visitor';
-import routes from '../../common/routes/visitor';
+import visitorReducer from '../../common/reducers/index';
+import routes from '../../common/routes/index';
 
 module.exports = {
 
