@@ -14,8 +14,8 @@ export default (props) =>
   <SocialMedia>
     <SocialMediaHeader>Keep In Touch</SocialMediaHeader>
     <SocialMediaList>
-        <SocialMediaIcon><SocialMediaLink><Icon type="vk" /></SocialMediaLink></SocialMediaIcon>
-        <SocialMediaIcon><SocialMediaLink><Icon type="fb" /></SocialMediaLink></SocialMediaIcon>
-        <SocialMediaIcon><SocialMediaLink><Icon type="instagram" /></SocialMediaLink></SocialMediaIcon>
+        <SocialMediaIcon><SocialMediaLink href="#"><Icon type="vk" /></SocialMediaLink></SocialMediaIcon>
+        <SocialMediaIcon><SocialMediaLink href="#"><Icon type="instagram" /></SocialMediaLink></SocialMediaIcon>
+        <SocialMediaIcon><SocialMediaLink href="#"><Icon type="fb" /></SocialMediaLink></SocialMediaIcon>
     </SocialMediaList>
   </SocialMedia>

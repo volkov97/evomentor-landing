@@ -13,6 +13,10 @@ export const SocialMediaHeader = styled.div`
   letter-spacing: 1px;
   text-align: center;
   color: #ffffff;
+
+  ${media.desktop`
+    font-size: 1.4em;
+  `}
 `
 
 export const SocialMediaList = styled.ul`

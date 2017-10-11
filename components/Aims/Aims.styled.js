@@ -50,6 +50,10 @@ export const Aim = styled.li`
 
     margin-bottom: 18px;
 
+    &:nth-child(2n) svg {
+        animation-delay: 1s;
+    }
+
     ${media.desktop`
         margin-bottom: 28px;
     `}
@@ -62,7 +66,24 @@ export const AimIcon = styled.div`
         width: 28px;
         height: 28px;
 
+        fill: #d8d5d5;
+
         vertical-align: middle;
+
+        @keyframes questions {
+            0% { fill: #d8d5d5; }
+            50% { fill: #e35d5b; }
+            100% { fill: #d8d5d5; }
+        }
+
+        animation-name: questions;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+
+        will-change: fill;
 
         ${media.desktop`
             width: 42px;
