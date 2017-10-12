@@ -16,5 +16,4 @@ export default (props) =>
         <Emblem src="/images/emblem.png" />
         <Logo src="/images/logo.png" />
     </Header>
-    <ArrowDown><Icon type="arrow-down" /></ArrowDown>
   </Wrap>

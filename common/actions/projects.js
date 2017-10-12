@@ -30,7 +30,7 @@ export function handleLoadingProjects() {
     return function (dispatch) {
         dispatch(fetchProjectsRequest());
 
-        return fetch(`http://localhost:3000/api`)
+        return fetch(`http://localhost:3600/api`)
             .then(response => response.json())
             .then(json => dispatch(fetchProjectsSuccess(json)))
             .catch(err => dispatch(fetchProjectsFailure(err)));

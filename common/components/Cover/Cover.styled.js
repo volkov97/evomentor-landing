@@ -2,28 +2,44 @@ import styled from 'styled-components';
 import media from '../../lib/mixins/media';
 
 export const Wrap = styled.div`
+    position: relative;
     padding-top: 20px;
 
     min-height: 90vh;
 
     background-color: #ffffff;
-    background-image: url('../../images/cover_mobile.jpg');
+    background-image: linear-gradient(to bottom, rgba(228, 168, 167, 0.9), transparent 52%), url('../../images/cover_mobile.jpg');
 
     background-size: cover;
     background-position: 50% 100%;
 
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 150px;
+
+        background:
+            linear-gradient(to bottom right, transparent 75%, #ffffff 50%),
+            linear-gradient(to bottom left, transparent 75%, #ffffff 50%);
+    }
+
     ${media.tablet`
         padding-top: 35px;
 
-        background-image: url('../../images/cover_tablet.jpg');
+        background-image: linear-gradient(to bottom, rgba(228, 168, 167, 0.9), transparent 34%), url('../../images/cover_tablet.jpg');
     `}
 
     ${media.desktop`
         padding-top: 50px;
 
-        min-height: 100vh;
+        min-height: 95vh;
 
-        background-image: url('../../images/cover_desktop.jpg');
+        background-attachment: fixed;
+        background-image: linear-gradient(to bottom, rgba(228, 168, 167, 0.9), transparent 52%), url('../../images/cover_desktop.jpg');
     `}
 `;
 

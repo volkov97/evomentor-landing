@@ -2,9 +2,22 @@ import styled from 'styled-components';
 import media from '../../lib/mixins/media';
 
 export const SocialMedia = styled.section`
-  padding: 40px 20px 20px;
+  position: relative;
+
+  padding: 100px 20px 20px;
 
   background-color: #e35d5b;
+
+  &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+
+      background: linear-gradient(to top left, transparent 50%, #fff 50%);
+  }
 `
 
 export const SocialMediaHeader = styled.div`
