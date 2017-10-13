@@ -74,6 +74,8 @@ export const Input = styled.input`
 export const SubmitButton = styled.button`
     padding: 8px 16px;
 
+    min-width: 100px;
+
     font-size: 1.1em;
     color: #ffffff;
     text-transform: uppercase;
@@ -82,6 +84,16 @@ export const SubmitButton = styled.button`
 
     border: none;
     border-radius: 4px;
+
+    & > svg {
+        height: 12px;
+
+        fill: #ffffff;
+    }
+
+    ${media.tablet`
+        min-width: 140px;
+    `}
 
     ${media.desktop`
         padding: 8px 24px;

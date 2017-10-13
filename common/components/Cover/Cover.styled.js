@@ -27,14 +27,10 @@ export const Wrap = styled.section`
     }
 
     ${media.tablet`
-        padding-top: 35px;
-
         background-image: url('../../images/cover_tablet.jpg');
     `}
 
     ${media.desktop`
-        padding-top: 50px;
-
         min-height: 95vh;
 
         background-attachment: fixed;

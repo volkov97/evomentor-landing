@@ -12,6 +12,8 @@ import Schedule from './_svg/schedule.svg';
 import Search from './_svg/search1.svg';
 import Stars from './_svg/stars.svg';
 import Trainer from './_svg/trainer.svg';
+import Loader from './_svg/three-dots.svg';
+import Success from './_svg/success.svg';
 
 class Icon extends React.Component {
   constructor(props) {
@@ -30,6 +32,8 @@ class Icon extends React.Component {
       'search': { default: <Search /> },
       'stars': { default: <Stars /> },
       'trainer': { default: <Trainer /> },
+      'loader': { default: <Loader /> },
+      'success': { default: <Success /> },
     };
   }
 
