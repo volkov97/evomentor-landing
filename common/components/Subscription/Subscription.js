@@ -19,6 +19,7 @@ export default ({ email, message, isLoading, onChange, onSubscribe }) =>
       <Description>Why do we need your email? We want to notify you about the status of our main project and if we will have some activities - we will also notify you!</Description>
       <Form>
           <Input
+            type="email"
             placeholder="Your Email"
 
             name="email"
