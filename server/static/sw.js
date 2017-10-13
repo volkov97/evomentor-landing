@@ -7,7 +7,7 @@ self.addEventListener('install', (e) => {
   // to make this work offline
   e.waitUntil(
     caches.open(cacheName).then(cache => cache.addAll([
-      '/',
+      // '/',
       /*
         DEAR READER,
         ADD A LIST OF YOUR ASSETS THAT

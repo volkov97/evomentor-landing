@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 import media from '../../lib/mixins/media';
 
-export const Wrap = styled.div`
+export const Wrap = styled.section`
     position: relative;
-    padding-top: 20px;
 
-    min-height: 90vh;
+    min-height: 85vh;
 
     background-color: #ffffff;
-    background-image: linear-gradient(to bottom, rgba(228, 168, 167, 0.9), transparent 52%), url('../../images/cover_mobile.jpg');
+    background-image: url('../../images/cover_mobile.jpg');
 
     background-size: cover;
     background-position: 50% 100%;
@@ -30,7 +29,7 @@ export const Wrap = styled.div`
     ${media.tablet`
         padding-top: 35px;
 
-        background-image: linear-gradient(to bottom, rgba(228, 168, 167, 0.9), transparent 34%), url('../../images/cover_tablet.jpg');
+        background-image: url('../../images/cover_tablet.jpg');
     `}
 
     ${media.desktop`
@@ -39,19 +38,21 @@ export const Wrap = styled.div`
         min-height: 95vh;
 
         background-attachment: fixed;
-        background-image: linear-gradient(to bottom, rgba(228, 168, 167, 0.9), transparent 52%), url('../../images/cover_desktop.jpg');
+        background-image: url('../../images/cover_desktop.jpg');
     `}
 `;
 
 export const Header = styled.div`
     display: flex;
+    padding: 20px 0 25px;
 
     align-items: center;
     justify-content: center;
+
+    background-color: rgba(227, 93, 91, 0.8);
 `;
 
 const HeaderImage = styled.img`
-    margin-bottom: 20px;
 `;
 
 export const Emblem = styled(HeaderImage)`
