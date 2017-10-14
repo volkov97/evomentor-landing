@@ -12,7 +12,7 @@ const mapStateToProps = ({ subscription: { data: { email }, message, isLoading }
 
 const mapDispatchToProps = dispatch => ({
   onSubscribe: email => dispatch(handleSubscribe(email)),
-  onChange: (e) => { console.log(e.target.value); dispatch(handleFieldChange(e)); },
+  onChange: (e) => { dispatch(handleFieldChange(e)); },
 });
 
 // for server rendering

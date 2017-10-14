@@ -18,10 +18,7 @@ module.exports = {
 
                 return res.render('visitor', options);
             })
-            .catch(err => {
-                console.log(err);
-                return res.send(500, error.message);
-            });
+            .catch(err => res.send(500, err.message));
     }
 
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import ym from 'react-yandex-metrika';
 
 import Icon from '../Icon/Icon';
 
@@ -30,7 +31,11 @@ export default ({ email, message, isLoading, onChange, onSubscribe }) =>
           {message ?
             <SubmitButton onClick={(event) => { event.preventDefault(); }}><Icon type="success" /></SubmitButton>
             :
-            <SubmitButton onClick={(event) => { event.preventDefault(); onSubscribe(email); }}>
+            <SubmitButton onClick={(event) => {
+              event.preventDefault();
+              ym('reachGoal', 'subscribe_button_clicked');
+              onSubscribe(email);
+            }}>
               {isLoading ?
                 <Icon type="loader" />
                 :
