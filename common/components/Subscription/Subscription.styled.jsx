@@ -98,6 +98,8 @@ export const SubmitButton = styled.button`
     ${media.desktop`
         padding: 8px 24px;
 
+        min-width: 160px;
+
         letter-spacing: 1px;
     `}
 `;
