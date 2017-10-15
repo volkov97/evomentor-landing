@@ -5,12 +5,14 @@ import Aims from '../components/Aims/Aims.translate';
 import Poster from '../components/Poster/Poster.translate';
 import Subscription from '../components/Subscription/Subscribtion.translate';
 import Features from '../components/Features/Features.translate';
+import SocialMedia from '../components/SocialMedia/SocialMedia.translate';
 
 const blocks = {
     Aims,
     Poster,
     Subscription,
     Features,
+    SocialMedia,
 };
 
 export const createDictionaryFromBlocks = (blocks) => {

@@ -30,7 +30,6 @@ export const AimsTitle = styled.h2`
 export const AimsDescription = styled.div`
     margin-bottom: 30px;
 
-    font-size: 1.2em;
     line-height: 1.6;
     color: #4b4b4c;
 
@@ -93,7 +92,6 @@ export const AimIcon = styled.div`
 `
 
 export const AimText = styled.div`
-    font-size: 1em;
     line-height: 1.5;
 
     ${media.desktop`
