@@ -9,6 +9,7 @@ module.exports = {
         renderer({
             routes,
             location: req.originalUrl,
+            cookies: req.universalCookies,
             reducer: visitorReducer
         })
             .then(options => {
@@ -18,7 +19,7 @@ module.exports = {
 
                 return res.render('visitor', options);
             })
-            .catch(err => res.send(500, err.message));
+            .catch(err => res.status(500).send(err.message));
     }
 
 }

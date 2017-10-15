@@ -1,12 +1,37 @@
 import { loadTranslations, setLocale, syncTranslationWithStore } from 'react-redux-i18n';
+import Cookies from 'universal-cookie';
 
-const dictionaries = Object.assign(
-    {},
-)
+import Aims from '../components/Aims/Aims.translate';
+import Poster from '../components/Poster/Poster.translate';
+import Subscription from '../components/Subscription/Subscribtion.translate';
+import Features from '../components/Features/Features.translate';
 
-export default function createDictionary(store) {
+const blocks = {
+    Aims,
+    Poster,
+    Subscription,
+    Features,
+};
+
+export const createDictionaryFromBlocks = (blocks) => {
+    const dictionaries = {};
+
+    Object.entries(blocks).forEach(([block, translations]) => {
+      Object.entries(translations).forEach(([key, langs]) => {
+        Object.entries(langs).forEach(([lang, value]) => {
+          if (!dictionaries[lang]) dictionaries[lang] = {};
+
+          dictionaries[lang][`${block}::${key}`] = value;
+        });
+      });
+    });
+
+    return dictionaries;
+  };
+
+export default function createDictionary(store, lang = new Cookies().get('lang')) {
     syncTranslationWithStore(store);
 
-    store.dispatch(loadTranslations(dictionaries));
-    store.dispatch(setLocale('en'));
+    store.dispatch(loadTranslations(createDictionaryFromBlocks(blocks)));
+    store.dispatch(setLocale(lang || 'en'));
 }

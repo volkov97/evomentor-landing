@@ -41,7 +41,6 @@ export const PosterContent = styled.div`
 
 export const PosterHeader = styled.h2`
   margin-top: 0;
-  margin-bottom: 20px;
 
   font-size: 1.8em;
   line-height: 1.4;
@@ -53,6 +52,8 @@ export const PosterHeader = styled.h2`
 `
 
 export const PosterText = styled.div`
+  margin-bottom: 20px;
+
   line-height: 1.6;
   color: #4b4b4c;
 

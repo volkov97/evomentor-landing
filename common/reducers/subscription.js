@@ -19,7 +19,7 @@ export default function subscription(state = initialState, action) {
             return { ...state, isLoading: true };
         case actionTypes.SUBSCRIBE_SUCCESS:
             ym('reachGoal', 'subscribe_success');
-            return { ...state, message: action.payload, isLoading: false };
+            return { ...state, message: action.payload, isLoading: false, error: null };
         case actionTypes.SUBSCRIBE_FAILURE:
             ym('reachGoal', 'subscribe_failure');
             return { ...state, isLoading: false, error: action.payload };

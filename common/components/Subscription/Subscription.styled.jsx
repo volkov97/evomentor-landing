@@ -42,6 +42,13 @@ export const Description = styled.div`
     `}
 `;
 
+export const Error = styled.div`
+    margin-bottom: 12px;
+
+    line-height: 1.4;
+    color: #e35d5b;
+`;
+
 export const Form = styled.form`
     ${media.tablet`
         display: flex;
@@ -92,13 +99,13 @@ export const SubmitButton = styled.button`
     }
 
     ${media.tablet`
-        min-width: 140px;
+        min-width: 150px;
     `}
 
     ${media.desktop`
         padding: 8px 24px;
 
-        min-width: 160px;
+        min-width: 170px;
 
         letter-spacing: 1px;
     `}

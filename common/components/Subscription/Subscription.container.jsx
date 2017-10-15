@@ -4,9 +4,10 @@ import { handleSubscribe, handleFieldChange } from '../../actions/subscription';
 
 import Subscription from './Subscription';
 
-const mapStateToProps = ({ subscription: { data: { email }, message, isLoading } }) => ({
+const mapStateToProps = ({ subscription: { data: { email }, message, error, isLoading } }) => ({
   email,
   message,
+  error,
   isLoading,
 });
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { I18n } from 'react-redux-i18n';
 
 import Icon from '../Icon/Icon';
 
@@ -13,8 +14,9 @@ import {
 export default (props) =>
   <Poster>
     <PosterContent>
-        <PosterHeader>Be strong, be active, be healthy!</PosterHeader>
-        <PosterText>We want to motivate everyone to take care of their bodies and health better! Speak with professionals and discuss the best solutions for you health and body!</PosterText>
+        <PosterHeader>{I18n.t('Poster::title')}</PosterHeader>
+        <PosterText>{I18n.t('Poster::description-one')}</PosterText>
+        <PosterText>{I18n.t('Poster::description-two')}</PosterText>
     </PosterContent>
     <PosterBackground />
   </Poster>

@@ -28,7 +28,7 @@ export const AimsTitle = styled.h2`
 `
 
 export const AimsDescription = styled.div`
-    margin-bottom: 34px;
+    margin-bottom: 30px;
 
     font-size: 1.2em;
     line-height: 1.6;
@@ -40,7 +40,7 @@ export const AimsDescription = styled.div`
 `
 
 export const AimsList = styled.ul`
-    padding: 0;
+    padding: 8px 0 0;
     list-style: none;
 `
 

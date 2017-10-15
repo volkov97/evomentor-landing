@@ -32,20 +32,20 @@ export const FeaturesHeader = styled.h2`
 `
 
 export const FeaturesText = styled.div`
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   line-height: 1.6;
   color: #4b4b4c;
 
   ${media.desktop`
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-size: 1.6em;
   `}
 `
 
 export const FeaturesList = styled.ul`
   margin: 0;
-  padding: 0;
+  padding: 20px 0 0;
   list-style: none;
 `
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { I18n } from 'react-redux-i18n';
 import ym from 'react-yandex-metrika';
 
 import Icon from '../Icon/Icon';
@@ -8,38 +9,49 @@ import {
   Subscription,
   Header,
   Description,
+  Error,
   Form,
   Input,
   SubmitButton,
 } from './Subscription.styled';
 
-export default ({ email, message, isLoading, onChange, onSubscribe }) =>
+export default ({ email, message, error, isLoading, onChange, onSubscribe }) =>
   <Wrap>
     <Subscription>
-      <Header>Subscribe, we need you!</Header>
-      <Description>Why do we need your email? We want to notify you about the status of our main project and if we will have some activities - we will also notify you!</Description>
+      <Header>{I18n.t('Subscription::title')}</Header>
+      <Description>{I18n.t('Subscription::description')}</Description>
+      {error && <Error>{I18n.t('Subscription::error')}</Error>}
       <Form>
           <Input
             type="email"
-            placeholder="Your Email"
+            placeholder={I18n.t('Subscription::email')}
 
             name="email"
             readOnly={!!message}
             value={email}
             onChange={onChange}
+            required
           />
           {message ?
-            <SubmitButton onClick={(event) => { event.preventDefault(); }}><Icon type="success" /></SubmitButton>
+            <SubmitButton
+              type="submit"
+              onClick={(event) => { event.preventDefault(); }}
+            >
+              <Icon type="success" />
+            </SubmitButton>
             :
-            <SubmitButton onClick={(event) => {
-              event.preventDefault();
-              ym('reachGoal', 'subscribe_button_clicked');
-              onSubscribe(email);
-            }}>
+            <SubmitButton
+              type="submit"
+              onClick={(event) => {
+                event.preventDefault();
+                ym('reachGoal', 'subscribe_button_clicked');
+                onSubscribe(email);
+              }}
+            >
               {isLoading ?
                 <Icon type="loader" />
                 :
-                'Subscribe'
+                I18n.t('Subscription::subscribe')
               }
             </SubmitButton>
           }

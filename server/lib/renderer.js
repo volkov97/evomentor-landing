@@ -10,7 +10,7 @@ import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
 import createDictionary from '../../common/lib/dictionary'
 
 export default ({
-    routes, location, reducer
+    routes, location, reducer, cookies
 }) => {
     return new Promise((resolve, reject) => {
         match({ routes, location }, (err, redirectLocation, renderProps) => {
@@ -34,7 +34,7 @@ export default ({
                 applyMiddleware(thunk)
             );
 
-            createDictionary(store);
+            createDictionary(store, cookies.get('lang'));
 
             // Styles
             const sheet = new ServerStyleSheet();
