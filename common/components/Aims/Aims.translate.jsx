@@ -1,27 +1,27 @@
 export default {
   title: {
     ru: 'Мы найдем для\u00A0тебя личного\u00A0тренера',
-    en: 'We will find a personal trainer for you.',
+    en: 'We will find a\u00A0personal\u00A0trainer for\u00A0you.',
   },
   'description-one': {
     ru: 'Мы хотим, чтобы каждый человек внимательно относился к своему здоровью. Наша платформа поможет найти для тебя профессионального тренера и диетолога.',
-    en: 'This page allows you to change your profile data. Press \'Save\' button to save changes.',
+    en: 'We want everyone to pay close attention to their health. Our platform will help you to find a personal trainer and nutritionist.',
   },
   'description-two': {
-      ru: 'Если хотя бы на один из вопросов ниже ты отвечаешь утвердительно, то мы создаем этот сервис для тебя.',
-      en: ''
+      ru: 'Если хотя бы на один из вопросов ниже ты отвечаешь утвердительно, то мы создаем эту платформу для тебя.',
+      en: 'If you can answer \'yes\' on at least one of the questions below - then we are creating this platform for you.'
   },
   'no-time-gym': {
       ru: 'У тебя нет времени ходить в спортзал?',
-      en: '',
+      en: 'Don\'t have enough time to go to the gym?',
   },
   'perfect-body': {
       ru: 'Ты мечтаешь о великолепном теле?',
-      en: 'You are dreaming about a perfect body?',
+      en: 'Are you dreaming about a perfect body?',
   },
   'loose-money': {
       ru: 'Ты боишься заплатить деньги и не получить нужный результат?',
-      en: 'You are afraid of loosing much money for no fitness result?',
+      en: 'Are you afraid of loosing much money for no result at gym?',
   },
   'no-hard-trainings': {
       ru: 'Тебе не нужны усиленные тренировки, и ты просто хочешь держать себя в форме?',
@@ -29,10 +29,10 @@ export default {
   },
   'special-program': {
       ru: 'Ты нуждаешься в программе тренировок, созданной специально для твоего тела?',
-      en: 'You need a well-prepared training program created espesially for you?',
+      en: 'Do you need a well-prepared training program created espesially for you?',
   },
   'ask-question': {
       ru: 'У тебя есть вопросы по фитнесу, которые нуждаются в профессиональных ответах?',
-      en: 'You just have a question that you want to ask a professional?',
+      en: 'Do you have any questions about fitness?',
   }
 };

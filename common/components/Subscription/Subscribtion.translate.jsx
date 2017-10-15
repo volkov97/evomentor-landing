@@ -5,7 +5,7 @@ export default {
     },
     description: {
         ru: 'Отправь нам свой адрес электронной почты через форму ниже - и мы будем оповещать тебя о самых интересных событиях сообщества Evomentor.',
-        en: 'We want to motivate everyone to take care of their bodies and health better! Speak with professionals and discuss the best solutions for you health and body!',
+        en: 'Send us your email address by the form below - and we will notify you about the most interesting events of Evomentor community.',
     },
     email: {
         ru: 'Электронной почта',
@@ -16,6 +16,7 @@ export default {
         en: 'Subscribe',
     },
     error: {
-        ru: 'Произошла ошибка. Пожалуйста, перезагрузите страницу и попробуйте снова. Приносим извинения за неудобства.'
+        ru: 'Произошла ошибка. Пожалуйста, перезагрузите страницу и попробуйте снова. Приносим извинения за неудобства.',
+        en: 'An error has occurred. Please reload the page and try again. We apologize for the inconvenience.',
     }
 }
