@@ -4,12 +4,12 @@ export default {
         en: 'Be with us!',
     },
     description: {
-        ru: 'Отправь нам свой адрес электронной почты через форму ниже - и мы будем оповещать тебя о самых интересных событиях сообщества Evomentor.',
+        ru: 'Отправьте нам свой контактный адрес (email или ссылка на социальную сеть) - и мы оповестим Вас о запуске проекта!',
         en: 'Send us your email address by the form below - and we will notify you about the most interesting events of Evomentor community.',
     },
     email: {
-        ru: 'Электронной почта',
-        en: 'Email',
+        ru: 'Имейл или ссылка на социальную сеть',
+        en: 'Email or link to social network',
     },
     subscribe: {
         ru: 'Отправить',

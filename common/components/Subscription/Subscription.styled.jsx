@@ -68,6 +68,11 @@ export const Input = styled.input`
     border: 1px solid #e35d5b;
     border-radius: 4px;
 
+    &:focus {
+        background-color: #fdf4f4;
+        outline: none;
+    }
+
     ${media.tablet`
         margin-right: 20px;
         margin-bottom: 0;
