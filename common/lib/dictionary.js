@@ -37,5 +37,5 @@ export default function createDictionary(store, lang = new Cookies().get('lang')
     syncTranslationWithStore(store);
 
     store.dispatch(loadTranslations(createDictionaryFromBlocks(blocks)));
-    store.dispatch(setLocale(lang || 'ru'));
+    store.dispatch(setLocale('ru'));
 }
