@@ -23,7 +23,7 @@ export default ({ email, message, error, isLoading, onChange, onSubscribe }) =>
       {error && <Error>{I18n.t('Subscription::error')}</Error>}
       <Form>
           <Input
-            type="email"
+            type="text"
             placeholder={I18n.t('Subscription::email')}
 
             name="email"
