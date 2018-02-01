@@ -33,7 +33,7 @@ export const createDictionaryFromBlocks = (blocks) => {
     return dictionaries;
   };
 
-export default function createDictionary(store, lang = new Cookies().get('lang')) {
+export default function createDictionary(store, lang = 'ru') {
     syncTranslationWithStore(store);
 
     store.dispatch(loadTranslations(createDictionaryFromBlocks(blocks)));
