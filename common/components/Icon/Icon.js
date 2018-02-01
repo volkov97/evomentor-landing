@@ -14,6 +14,11 @@ import Stars from './_svg/stars.svg';
 import Trainer from './_svg/trainer.svg';
 import Loader from './_svg/three-dots.svg';
 import Success from './_svg/success.svg';
+import Account from './_svg/account.svg';
+import Clients from './_svg/clients.svg';
+import Library from './_svg/library.svg';
+import Analytics from './_svg/analitics.svg';
+import Chat from './_svg/chat.svg';
 
 class Icon extends React.Component {
   constructor(props) {
@@ -34,6 +39,11 @@ class Icon extends React.Component {
       'trainer': { default: <Trainer /> },
       'loader': { default: <Loader /> },
       'success': { default: <Success /> },
+      'account': { default: <Account /> },
+      'clients': { default: <Clients /> },
+      'library': { default: <Library /> },
+      'analitics': { default: <Analytics /> },
+      'chat': { default: <Chat /> },
     };
   }
 

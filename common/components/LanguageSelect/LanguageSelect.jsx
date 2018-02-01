@@ -31,7 +31,7 @@ export default class LanguageSelect extends React.Component {
         <Select onChange={this._onLanguageChange} value={this.state.activeLanguage}>
           <option value="ru">RU</option>
           <option value="en">EN</option>
-          <option value="pl">PL</option>
+          {/* <option value="pl">PL</option> */}
         </Select>
       </Wrap>
     );

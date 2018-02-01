@@ -24,7 +24,7 @@ const history = syncHistoryWithStore(browserHistory, store);
 
 createDictionary(store);
 
-ReactDOM.hydrate(
+ReactDOM.render(
     <Provider store={store}>
         <Router history={history} routes={routes} onUpdate={() => window.scrollTo(0, 0)} />
     </Provider>,

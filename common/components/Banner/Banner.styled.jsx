@@ -9,23 +9,8 @@ export const Wrap = styled.div`
     background-size: cover;
     background-position: 50% 100%;
 
-    &:before, &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60px;
-
-        background: linear-gradient(to top left, transparent 50%, #fff 50%);
-    }
-
-    &:after {
-        top: inherit;
-        bottom: 0;
-
-        background: linear-gradient(to bottom right, transparent 50%, #fff 50%);
-    }
+    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
 
     ${media.tablet`
         min-height: 550px;

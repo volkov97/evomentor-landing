@@ -9,7 +9,7 @@ module.exports = function() {
                     query: {
                         presets: ['es2015', 'react', 'react-hmre'],
                         plugins: [
-                            ["babel-plugin-styled-components", { "ssr": true }]
+                            ["babel-plugin-styled-components"]
                         ]
                     },
                 }

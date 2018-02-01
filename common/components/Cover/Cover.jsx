@@ -19,7 +19,6 @@ export default (props) =>
         <Emblem src="/images/emblem.png" />
         <Logo src="/images/logo.png" />
     </Header>
-    <Decoration>
-      <LanguageSelect />
-    </Decoration>
+
+    <LanguageSelect />
   </Wrap>

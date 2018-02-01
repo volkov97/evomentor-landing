@@ -12,6 +12,9 @@ export const Wrap = styled.section`
     background-size: cover;
     background-position: 50% 100%;
 
+    -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+    clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+
     ${media.tablet`
         background-image: url('../../images/cover_tablet.jpg');
     `}
@@ -22,19 +25,6 @@ export const Wrap = styled.section`
         background-attachment: fixed;
         background-image: url('../../images/cover_desktop.jpg');
     `}
-`;
-
-export const Decoration = styled.div`
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 150px;
-
-    background:
-        linear-gradient(to bottom right, transparent 75%, #ffffff 50%),
-        linear-gradient(to bottom left, transparent 75%, #ffffff 50%);
 `;
 
 export const Header = styled.div`

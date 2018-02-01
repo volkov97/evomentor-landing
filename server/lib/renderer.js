@@ -43,9 +43,9 @@ export default ({
                 .then(() => {
                     // Markup
                     const markup = renderToString(sheet.collectStyles(
-                            <Provider store={store}>
-                                <RouterContext {...renderProps} />
-                            </Provider>
+                        <Provider store={store}>
+                            <RouterContext {...renderProps} />
+                        </Provider>
                     ));
 
                     // Grab the initial state from our Redux store
