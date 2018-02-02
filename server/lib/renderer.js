@@ -34,7 +34,8 @@ export default ({
                 applyMiddleware(thunk)
             );
 
-            createDictionary(store, cookies.get('lang'));
+            createDictionary(store,
+                ((location.query && location.query.lang) || cookies.get('lang')));
 
             // Styles
             const sheet = new ServerStyleSheet();

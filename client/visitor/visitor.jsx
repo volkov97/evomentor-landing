@@ -22,7 +22,15 @@ const store = createStore(
 
 const history = syncHistoryWithStore(browserHistory, store);
 
-createDictionary(store);
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    const results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
+const lang = getUrlParameter('lang').length ? getUrlParameter('lang') : undefined;
+createDictionary(store, lang);
 
 ReactDOM.render(
     <Provider store={store}>
