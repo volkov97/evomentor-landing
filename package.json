@@ -4,7 +4,7 @@
   "description": "evomentor.com web-site",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.19.2",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-plugin-inline-react-svg": "^0.4.0",
